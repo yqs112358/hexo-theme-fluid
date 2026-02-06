@@ -399,6 +399,10 @@ search:
 # 首屏图片的相关配置
 # Config of the big image on the first screen
 banner:
+  # 是否开启所有页面的随机头图（仅在对应 banner_img 为空时生效）
+  # Enable random banner for all pages (only works when banner_img is empty)
+  random_img: true
+  
   # 视差滚动，图片与板块会随着屏幕滚动产生视差效果
   # Scrolling parallax
   parallax: true
@@ -654,6 +658,9 @@ post:
   # Table of contents (TOC) in the sidebar
   toc:
     enable: true
+    # 进入文章时是否默认展开全部目录
+    # Expand all TOC items on enter
+    expand_all: true
 
     # 置于板块的左侧或右侧
     # place in the board
